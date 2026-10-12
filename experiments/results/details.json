@@ -1,0 +1,386 @@
+[
+  {
+    "input": "the cat smiled",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl slept",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog laughed",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the cat ran that the cat chased",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка 1, позиция 13: No terminal matches 't' in the current parser context, at line 1 col 13"
+      }
+    }
+  },
+  {
+    "input": "the cat",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка -1, позиция -1: Unexpected end-of-input. Expected one of: "
+      }
+    }
+  },
+  {
+    "input": "a girl",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка -1, позиция -1: Unexpected end-of-input. Expected one of: "
+      }
+    }
+  },
+  {
+    "input": "a cat that the bird heard smiled",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl that a dog saw waited",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the woman that a man saw waited",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird that the man liked fly",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка 1, позиция 29: No terminal matches 'f' in the current parser context, at line 1 col 29"
+      }
+    }
+  },
+  {
+    "input": "the dog that the girl heard fly",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка 1, позиция 29: No terminal matches 'f' in the current parser context, at line 1 col 29"
+      }
+    }
+  },
+  {
+    "input": "the bird that a child heard",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка -1, позиция -1: Unexpected end-of-input. Expected one of: "
+      }
+    }
+  },
+  {
+    "input": "a woman that the man that the boy liked chased slept",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a bird that a girl that a cat chased saw smiled",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man that the girl that a girl found found waited",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a boy that the man that a bird heard chased",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка -1, позиция -1: Unexpected end-of-input. Expected one of: "
+      }
+    }
+  },
+  {
+    "input": "a dog that the dog that the boy found liked fly",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка 1, позиция 45: No terminal matches 'f' in the current parser context, at line 1 col 45"
+      }
+    }
+  },
+  {
+    "input": "a child that a cat that the man heard saw smiled that the cat chased",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка 1, позиция 50: No terminal matches 't' in the current parser context, at line 1 col 50"
+      }
+    }
+  },
+  {
+    "input": "a boy that a cat that a boy that the man liked liked chased slept",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a boy that the woman that a cat that the woman heard chased saw slept",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog that a dog that the boy that a boy heard liked liked waited",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the man that a woman that a child that the girl chased saw heard",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка -1, позиция -1: Unexpected end-of-input. Expected one of: "
+      }
+    }
+  },
+  {
+    "input": "the girl that the dog that the girl that the cat heard saw liked fly",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка 1, позиция 66: No terminal matches 'f' in the current parser context, at line 1 col 66"
+      }
+    }
+  },
+  {
+    "input": "the a girl that the child that the child that a girl saw saw found smiled",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d2": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "строка 1, позиция 5: No terminal matches 'a' in the current parser context, at line 1 col 5"
+      }
+    }
+  }
+]
