@@ -1,0 +1,28 @@
+// Учебная английская грамматика
+// S   — предложение
+// NP  — именная группа
+// Det — определитель (артикль)
+// N   — существительное
+// IV  — непереходный глагол
+// V   — переходный глагол
+
+start: s
+
+s: np iv
+
+np: det n
+  | det n that np v
+
+that: "that"
+
+det: "the" | "a"
+
+n: "cat" | "dog" | "boy" | "girl" | "man" | "woman" | "bird" | "child"
+
+iv: "ran" | "slept" | "smiled" | "waited" | "laughed"
+
+v: "saw" | "chased" | "heard" | "found" | "liked"
+
+%import common.WS
+%ignore WS
+
