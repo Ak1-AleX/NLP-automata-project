@@ -5,7 +5,7 @@
     "label": "correct",
     "negative_type": null,
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": true,
         "error": null
       },
@@ -21,7 +21,7 @@
     "label": "correct",
     "negative_type": null,
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": true,
         "error": null
       },
@@ -37,7 +37,7 @@
     "label": "correct",
     "negative_type": null,
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": true,
         "error": null
       },
@@ -48,12 +48,316 @@
     }
   },
   {
-    "input": "the cat ran that the cat chased",
+    "input": "a cat ran",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl slept",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl laughed",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a girl waited",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a cat slept",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a woman smiled",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl smiled",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog waited",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the woman smiled",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a cat waited",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird ran",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a woman laughed",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog ran",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the man ran",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog waited",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a child smiled",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the woman smiled",
+    "depth": 0,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a dog",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "girl slept",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "missing_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man laughed that the cat chased",
     "depth": 0,
     "label": "incorrect",
     "negative_type": "unclosed_embedding",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
@@ -64,12 +368,12 @@
     }
   },
   {
-    "input": "the cat",
+    "input": "a cat",
     "depth": 0,
     "label": "incorrect",
     "negative_type": "missing_iv",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
@@ -80,12 +384,60 @@
     }
   },
   {
-    "input": "a girl",
+    "input": "bird a smiled",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "woman the slept",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "bird waited",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "missing_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a boy",
     "depth": 0,
     "label": "incorrect",
     "negative_type": "missing_iv",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
@@ -96,60 +448,44 @@
     }
   },
   {
-    "input": "a cat that the bird heard smiled",
-    "depth": 1,
-    "label": "correct",
-    "negative_type": null,
+    "input": "bird laughed",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "missing_det",
     "results": {
-      "bounded_d2": {
-        "accepted": true,
+      "bounded_d1": {
+        "accepted": false,
         "error": null
       },
       "cfg": {
-        "accepted": true,
+        "accepted": false,
         "error": null
       }
     }
   },
   {
-    "input": "the girl that a dog saw waited",
-    "depth": 1,
-    "label": "correct",
-    "negative_type": null,
+    "input": "a girl slept that the cat chased",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
     "results": {
-      "bounded_d2": {
-        "accepted": true,
+      "bounded_d1": {
+        "accepted": false,
         "error": null
       },
       "cfg": {
-        "accepted": true,
+        "accepted": false,
         "error": null
       }
     }
   },
   {
-    "input": "the woman that a man saw waited",
-    "depth": 1,
-    "label": "correct",
-    "negative_type": null,
-    "results": {
-      "bounded_d2": {
-        "accepted": true,
-        "error": null
-      },
-      "cfg": {
-        "accepted": true,
-        "error": null
-      }
-    }
-  },
-  {
-    "input": "the bird that the man liked fly",
-    "depth": 1,
+    "input": "a dog fly",
+    "depth": 0,
     "label": "incorrect",
     "negative_type": "unknown_token",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
@@ -160,12 +496,28 @@
     }
   },
   {
-    "input": "the dog that the girl heard fly",
-    "depth": 1,
+    "input": "boy the waited",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird fly",
+    "depth": 0,
     "label": "incorrect",
     "negative_type": "unknown_token",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
@@ -176,12 +528,508 @@
     }
   },
   {
-    "input": "the bird that a child heard",
+    "input": "a man fly",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "man the smiled",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "bird a slept",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the man laughed that the cat chased",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the man",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the boy fly",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "the woman",
+    "depth": 0,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog that a man chased ran",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog that the child saw laughed",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the boy that a boy heard laughed",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a girl that the man found smiled",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a child that the girl chased ran",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a cat that the girl saw ran",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl that the cat heard ran",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the man that a girl liked slept",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a girl that a bird chased ran",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird that a bird found waited",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog that the bird heard ran",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl that the child chased waited",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the man that a girl saw waited",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the cat that the dog chased slept",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a child that a girl found ran",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird that the bird heard waited",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a bird that a boy chased smiled",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the cat that the woman saw ran",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a boy that the dog chased ran",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl that a dog liked slept",
+    "depth": 1,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": true,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog that a woman heard fly",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "girl that a bird chased smiled",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "missing_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a dog that the child liked laughed that the cat chased",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "girl the that a boy heard ran",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man that the child liked",
     "depth": 1,
     "label": "incorrect",
     "negative_type": "missing_iv",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
@@ -192,76 +1040,12 @@
     }
   },
   {
-    "input": "a woman that the man that the boy liked chased slept",
-    "depth": 2,
-    "label": "correct",
-    "negative_type": null,
-    "results": {
-      "bounded_d2": {
-        "accepted": true,
-        "error": null
-      },
-      "cfg": {
-        "accepted": true,
-        "error": null
-      }
-    }
-  },
-  {
-    "input": "a bird that a girl that a cat chased saw smiled",
-    "depth": 2,
-    "label": "correct",
-    "negative_type": null,
-    "results": {
-      "bounded_d2": {
-        "accepted": true,
-        "error": null
-      },
-      "cfg": {
-        "accepted": true,
-        "error": null
-      }
-    }
-  },
-  {
-    "input": "a man that the girl that a girl found found waited",
-    "depth": 2,
-    "label": "correct",
-    "negative_type": null,
-    "results": {
-      "bounded_d2": {
-        "accepted": true,
-        "error": null
-      },
-      "cfg": {
-        "accepted": true,
-        "error": null
-      }
-    }
-  },
-  {
-    "input": "a boy that the man that a bird heard chased",
-    "depth": 2,
-    "label": "incorrect",
-    "negative_type": "missing_iv",
-    "results": {
-      "bounded_d2": {
-        "accepted": false,
-        "error": null
-      },
-      "cfg": {
-        "accepted": false,
-        "error": null
-      }
-    }
-  },
-  {
-    "input": "a dog that the dog that the boy found liked fly",
-    "depth": 2,
+    "input": "the man that the boy heard fly",
+    "depth": 1,
     "label": "incorrect",
     "negative_type": "unknown_token",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
@@ -272,12 +1056,652 @@
     }
   },
   {
-    "input": "a child that a cat that the man heard saw smiled that the cat chased",
+    "input": "man the that a girl heard slept",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "child that a cat saw waited",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "missing_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the the cat that a boy heard slept",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "bird that the dog saw slept",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "missing_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the woman that the bird chased fly",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "the a cat that a girl chased ran",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the a boy that the boy chased waited",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "woman the that a girl heard slept",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "bird that the child chased slept",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "missing_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man that the girl saw slept that the cat chased",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man that the man heard laughed that the cat chased",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a cat that the man chased laughed that the cat chased",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the the dog that a woman heard waited",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird that the man saw fly",
+    "depth": 1,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "the girl that a bird that the woman liked heard ran",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man that a woman that a man liked chased slept",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a bird that the man that a cat heard heard slept",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a woman that a child that a girl liked found slept",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the man that a dog that the man chased chased slept",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the cat that the child that the child found liked slept",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a child that a girl that the cat saw found slept",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the child that the girl that the child chased found laughed",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a child that a child that the child found heard slept",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a child that the man that a dog heard chased smiled",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a woman that the boy that the girl found chased slept",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird that a woman that a bird saw chased waited",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a cat that a child that the woman heard found waited",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the child that the man that a child saw found smiled",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a boy that a boy that the bird liked liked ran",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird that the child that the cat heard found smiled",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the child that a woman that a man found heard ran",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a cat that the woman that the dog saw saw slept",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the cat that the girl that the child saw liked slept",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man that a boy that the boy heard saw laughed",
+    "depth": 2,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "bird a that a girl that the girl saw heard laughed",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "woman the that a woman that the woman saw found waited",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "woman a that a boy that a boy liked heard laughed",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a child that a man that a girl saw heard fly",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "a bird that a cat that a woman chased found",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the a woman that a man that the girl saw chased waited",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the child that a child that the dog heard chased waited that the cat chased",
     "depth": 2,
     "label": "incorrect",
     "negative_type": "unclosed_embedding",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
@@ -288,60 +1712,60 @@
     }
   },
   {
-    "input": "a boy that a cat that a boy that the man liked liked chased slept",
-    "depth": 3,
-    "label": "correct",
-    "negative_type": null,
+    "input": "man that a child that a bird liked heard smiled",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "missing_det",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
       "cfg": {
-        "accepted": true,
+        "accepted": false,
         "error": null
       }
     }
   },
   {
-    "input": "a boy that the woman that a cat that the woman heard chased saw slept",
-    "depth": 3,
-    "label": "correct",
-    "negative_type": null,
+    "input": "man that a man that the dog chased heard ran",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "missing_det",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
       "cfg": {
-        "accepted": true,
+        "accepted": false,
         "error": null
       }
     }
   },
   {
-    "input": "the dog that a dog that the boy that a boy heard liked liked waited",
-    "depth": 3,
-    "label": "correct",
-    "negative_type": null,
+    "input": "girl that the child that a man saw chased smiled",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "missing_det",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
       "cfg": {
-        "accepted": true,
+        "accepted": false,
         "error": null
       }
     }
   },
   {
-    "input": "the man that a woman that a child that the girl chased saw heard",
-    "depth": 3,
+    "input": "a boy that a cat that the man saw saw",
+    "depth": 2,
     "label": "incorrect",
     "negative_type": "missing_iv",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
@@ -352,12 +1776,60 @@
     }
   },
   {
-    "input": "the girl that the dog that the girl that the cat heard saw liked fly",
-    "depth": 3,
+    "input": "the the child that the cat that a child found found smiled",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the man that a dog that the bird found saw",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "boy that the man that the girl saw liked waited",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "missing_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird that a child that a bird heard liked fly",
+    "depth": 2,
     "label": "incorrect",
     "negative_type": "unknown_token",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
@@ -368,18 +1840,1362 @@
     }
   },
   {
-    "input": "the a girl that the child that the child that a girl saw saw found smiled",
+    "input": "girl the that the man that the boy chased chased laughed",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "cat the that a child that a man saw chased smiled",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "child that the girl that a girl found saw laughed",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "missing_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the man that the dog that the boy heard liked",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the a dog that a man that a man liked liked waited",
+    "depth": 2,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a dog that the bird that a man that the dog chased liked liked ran",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a cat that the child that a man that the bird found saw found smiled",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a woman that a dog that the woman that a child heard found liked ran",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a dog that a man that a dog that a cat liked found found ran",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the woman that a child that the girl that a boy heard found found ran",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl that the man that the bird that the girl saw found saw slept",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man that a bird that a child that the child liked chased found slept",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog that a bird that a man that the man heard liked liked waited",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the child that a woman that a bird that a woman chased chased liked waited",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird that the woman that a bird that a boy found saw chased laughed",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a dog that a dog that a cat that the bird chased saw found smiled",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a bird that the woman that a woman that a cat liked saw chased smiled",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog that a dog that the child that the man saw saw heard ran",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a woman that a bird that the girl that a boy chased chased saw laughed",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a girl that a boy that the child that a child heard saw found smiled",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the dog that a woman that a bird that a child heard chased found waited",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl that a woman that a man that the bird heard saw liked ran",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man that the woman that the girl that a boy saw saw heard waited",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the woman that the dog that a woman that a boy chased chased liked smiled",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a boy that a child that a woman that the child saw chased chased waited",
+    "depth": 3,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a dog that a cat that a dog that a woman heard liked found fly",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "child the that the woman that the dog that a man found saw chased ran",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "child a that the dog that the boy that a child heard liked found laughed",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "bird that the child that a man that the woman chased found found slept",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "missing_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the the woman that a cat that a man that the dog found saw chased laughed",
     "depth": 3,
     "label": "incorrect",
     "negative_type": "extra_det",
     "results": {
-      "bounded_d2": {
+      "bounded_d1": {
         "accepted": false,
         "error": null
       },
       "cfg": {
         "accepted": false,
         "error": null
+      }
+    }
+  },
+  {
+    "input": "woman the that the boy that the dog that the girl chased heard chased laughed",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "boy a that the man that the dog that the boy saw heard chased laughed",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the the boy that a cat that the bird that the dog found found heard laughed",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the child that the cat that a child that the cat found found found fly",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "a dog that the woman that the dog that the man liked liked liked smiled that the cat chased",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a child that a dog that the girl that a child chased found heard waited that the cat chased",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a dog that a bird that a man that a boy found saw saw ran that the cat chased",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "dog a that a boy that the woman that the bird heard found saw smiled",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a woman that the girl that the child that the dog heard liked heard fly",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "the the bird that the man that the boy that a man heard heard saw slept",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a dog that the cat that the girl that a bird found heard chased",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the a dog that the boy that the cat that the man found found found laughed",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man that the dog that a bird that the man liked found liked smiled that the cat chased",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "bird the that the cat that the man that the boy heard heard heard ran",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "bird a that the boy that a girl that a dog found saw found ran",
+    "depth": 3,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a dog that a bird that a bird that a dog that a cat heard chased liked found smiled",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird that the girl that a bird that the bird that a woman chased heard chased saw laughed",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl that a woman that the girl that the boy that a girl chased liked chased saw slept",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a child that a woman that a boy that a dog that a child heard heard liked saw smiled",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the man that a child that the cat that a man that the dog liked liked liked found waited",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the child that the woman that a boy that the child that the woman saw liked chased saw slept",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a child that the woman that a man that a bird that a cat heard saw heard saw laughed",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man that a boy that a dog that the woman that a bird chased liked saw heard laughed",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a woman that the dog that a woman that the woman that a boy chased heard found chased slept",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the boy that the man that the cat that a boy that a boy chased chased liked chased waited",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird that a girl that a man that a girl that the man found chased heard liked waited",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a man that a bird that the girl that the man that the child heard liked saw liked ran",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a dog that the man that a boy that a dog that the child heard saw found saw waited",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a girl that a dog that a girl that the woman that the woman chased chased saw heard waited",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the child that a cat that the cat that a girl that the bird saw heard chased heard ran",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the girl that a child that the dog that a cat that the boy heard found saw liked smiled",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the bird that the dog that a dog that the bird that a cat found heard heard saw smiled",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the woman that the dog that a boy that the woman that a boy found found chased chased ran",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a cat that a girl that the girl that the woman that a bird liked found heard saw slept",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a woman that the woman that a dog that a bird that a child found heard chased found waited",
+    "depth": 4,
+    "label": "correct",
+    "negative_type": null,
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the a dog that a dog that a boy that a woman that the dog heard heard heard found laughed",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "boy that a woman that a cat that a bird that a cat saw found heard liked slept",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "missing_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "child the that the boy that the girl that a woman that a cat liked chased found heard smiled",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the boy that a bird that a man that the dog that the boy found liked found liked ran that the cat chased",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the a child that the man that a girl that the boy that the child chased found saw heard smiled",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "man that a boy that the woman that the dog that the boy chased found saw heard laughed",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "missing_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a child that the dog that the man that a child that a bird liked saw chased heard fly",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "a woman that the boy that the bird that the dog that the man chased chased heard chased smiled that the cat chased",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a dog that a girl that a boy that a dog that the boy chased liked liked heard fly",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "dog the that the man that the bird that the child that a man found chased found heard waited",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "boy the that a bird that a child that the woman that the woman heard heard found chased smiled",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the woman that the child that the man that a girl that the dog saw heard found liked fly",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "the woman that a girl that the child that a child that a child saw saw found liked",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the woman that the cat that a child that a man that the dog found chased heard heard",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "missing_iv",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the the bird that the girl that a man that the bird that a man liked liked saw chased ran",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "extra_det",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a woman that a boy that the bird that the cat that the boy heard found liked found slept that the cat chased",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "unclosed_embedding",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "the woman that a boy that a man that a child that a child saw heard heard saw fly",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "a cat that a man that the cat that a boy that a boy chased saw liked saw fly",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
+      }
+    }
+  },
+  {
+    "input": "woman a that a boy that a girl that a child that the boy liked chased liked heard waited",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "word_order",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": null
+      }
+    }
+  },
+  {
+    "input": "a woman that the child that a woman that a child that the girl heard liked heard chased fly",
+    "depth": 4,
+    "label": "incorrect",
+    "negative_type": "unknown_token",
+    "results": {
+      "bounded_d1": {
+        "accepted": false,
+        "error": null
+      },
+      "cfg": {
+        "accepted": false,
+        "error": "неизвестное слово: 'fly'"
       }
     }
   }

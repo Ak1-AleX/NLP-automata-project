@@ -43,6 +43,9 @@ def run_experiment(
     if bounded_depth < 0:
         raise ValueError("bounded_depth не может быть отрицательной")
 
+    output_dir = Path(results_dir) if results_dir is not None else RESULTS_DIR
+    output_dir.mkdir(parents=True, exist_ok=True)
+
     dataset = generate_dataset(
         range(min_depth, max_depth + 1),
         n_per_depth=n_per_depth,
@@ -62,10 +65,10 @@ def run_experiment(
         },
     ])
 
-    output_dir = Path(results_dir) if results_dir is not None else RESULTS_DIR
     depths = list(range(min_depth, max_depth + 1))
     save_summary_csv(result["summary"], output_dir / "summary.csv", depths=depths)
     save_details_json(result["details"], output_dir / "details.json")
+
     metadata = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "python_version": platform.python_version(),
