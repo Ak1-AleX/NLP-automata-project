@@ -1,5 +1,7 @@
 """Стековый алгоритм для языка L2 = a^n b^n (n >= 0)."""
 
+from time import perf_counter
+
 ALPHABET = {"a", "b"}
 
 
@@ -8,6 +10,7 @@ def analyze(input_str: str) -> dict:
 
     Возвращает dict по контракту из docs/api.md.
     """
+    started = perf_counter()
     stack = []
     trace = []
     error = None
@@ -55,5 +58,5 @@ def analyze(input_str: str) -> dict:
         "trace": trace,
         "parse_tree": None,
         "error": error,
-        "elapsed_ms": 0.0,
+        "elapsed_ms": (perf_counter() - started) * 1000,
     }

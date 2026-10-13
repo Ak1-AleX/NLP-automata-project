@@ -1,8 +1,11 @@
 """Обёртка над Lark: проверка принадлежности и дерево разбора."""
 
 from pathlib import Path
+from time import perf_counter
+from functools import lru_cache
+import re
 from lark import Lark, Tree, Token
-from lark.exceptions import UnexpectedInput, UnexpectedToken, UnexpectedCharacters
+from lark.exceptions import UnexpectedInput
 
 GRAMMAR_DIR = Path(__file__).parent
 
@@ -49,6 +52,7 @@ def analyze(input_str: str, grammar: str = "english") -> dict:
 
     Возвращает dict по контракту из docs/api.md.
     """
+    started = perf_counter()
     tokens = _tokenize(input_str)
     error = None
     parse_tree = None
@@ -61,8 +65,11 @@ def analyze(input_str: str, grammar: str = "english") -> dict:
             tree = tree.children[0]
         parse_tree = _to_sexpr(tree)
         accepted = True
-    except (UnexpectedInput, UnexpectedToken, UnexpectedCharacters) as e:
-        error = _format_lark_error(e)
+    except UnexpectedInput:
+        # A syntax mismatch over known terminals is an ordinary language
+        # rejection. Reserve ``error`` for symbols outside the grammar's
+        # alphabet so evaluation can distinguish rejection from bad input.
+        error = _unknown_symbol_error(input_str, grammar)
     except ValueError as e:
         error = str(e)
 
@@ -74,15 +81,31 @@ def analyze(input_str: str, grammar: str = "english") -> dict:
         "trace": [],
         "parse_tree": parse_tree,
         "error": error,
-        "elapsed_ms": 0.0,
+        "elapsed_ms": (perf_counter() - started) * 1000,
     }
 
 
-def _format_lark_error(e) -> str:
-    """Приводит сообщение Lark к читаемому виду."""
-    line = getattr(e, "line", None)
-    column = getattr(e, "column", None)
-    msg = str(e).splitlines()[0] if str(e) else e.__class__.__name__
-    if line is not None and column is not None:
-        return f"строка {line}, позиция {column}: {msg}"
-    return msg
+@lru_cache(maxsize=None)
+def _grammar_vocabulary(grammar: str) -> frozenset[str]:
+    """Extract literal terminals so vocabulary checks follow the grammar file."""
+    path = _GRAMMAR_FILES.get(grammar)
+    if path is None:
+        return frozenset()
+    text = path.read_text(encoding="utf-8")
+    return frozenset(re.findall(r'"([^"\\]+)"', text))
+
+
+def _unknown_symbol_error(input_str: str, grammar: str) -> str | None:
+    """Возвращает ошибку для первого символа/слова вне алфавита грамматики."""
+    vocabulary = _grammar_vocabulary(grammar)
+    if vocabulary is None:
+        return None
+    if grammar == "anbn":
+        unknown = next((symbol for symbol in input_str if symbol not in vocabulary), None)
+        if unknown is not None:
+            return f"символ {unknown!r} не входит в алфавит {{a, b}}"
+    else:
+        unknown = next((token for token in input_str.split() if token not in vocabulary), None)
+        if unknown is not None:
+            return f"неизвестное слово: {unknown!r}"
+    return None

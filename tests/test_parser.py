@@ -70,6 +70,7 @@ def test_anbn_accepts_valid(input_str):
     "ba",
     "a",
     "b",
+    "a a b b",  # пробелы не входят в алфавит L2
 ])
 def test_anbn_rejects_invalid(input_str):
     result = analyze(input_str, grammar="anbn")
@@ -133,11 +134,16 @@ def test_parse_tree_none_on_reject():
 
 # --- Ошибки ---
 
-def test_error_message_present_on_reject():
+def test_known_word_syntax_rejection_has_no_error():
     result = analyze("the cat the ran", grammar="english")
-    assert result["error"] is not None
-    assert isinstance(result["error"], str)
-    assert len(result["error"]) > 0
+    assert result["accepted"] is False
+    assert result["error"] is None
+
+
+def test_unknown_word_returns_error():
+    result = analyze("the cat fly", grammar="english")
+    assert result["accepted"] is False
+    assert result["error"] == "неизвестное слово: 'fly'"
 
 
 def test_unknown_grammar_returns_error():

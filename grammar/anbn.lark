@@ -5,6 +5,3 @@ start: s
 
 s: "a" s "b"
  |
-
-%import common.WS
-%ignore WS
