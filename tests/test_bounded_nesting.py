@@ -154,3 +154,9 @@ def test_pattern_is_cached():
     analyze("a dog slept", max_depth=1)
     second = _patterns[1]
     assert first is second
+
+
+@pytest.mark.parametrize("max_depth", [-1, 1.5, True])
+def test_invalid_max_depth_is_rejected(max_depth):
+    with pytest.raises((TypeError, ValueError)):
+        analyze("the cat ran", max_depth=max_depth)

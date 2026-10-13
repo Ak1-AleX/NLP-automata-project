@@ -59,7 +59,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка 1, позиция 13: No terminal matches 't' in the current parser context, at line 1 col 13"
+        "error": null
       }
     }
   },
@@ -75,7 +75,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка -1, позиция -1: Unexpected end-of-input. Expected one of: "
+        "error": null
       }
     }
   },
@@ -91,7 +91,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка -1, позиция -1: Unexpected end-of-input. Expected one of: "
+        "error": null
       }
     }
   },
@@ -155,7 +155,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка 1, позиция 29: No terminal matches 'f' in the current parser context, at line 1 col 29"
+        "error": "неизвестное слово: 'fly'"
       }
     }
   },
@@ -171,7 +171,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка 1, позиция 29: No terminal matches 'f' in the current parser context, at line 1 col 29"
+        "error": "неизвестное слово: 'fly'"
       }
     }
   },
@@ -187,7 +187,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка -1, позиция -1: Unexpected end-of-input. Expected one of: "
+        "error": null
       }
     }
   },
@@ -251,7 +251,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка -1, позиция -1: Unexpected end-of-input. Expected one of: "
+        "error": null
       }
     }
   },
@@ -267,7 +267,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка 1, позиция 45: No terminal matches 'f' in the current parser context, at line 1 col 45"
+        "error": "неизвестное слово: 'fly'"
       }
     }
   },
@@ -283,7 +283,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка 1, позиция 50: No terminal matches 't' in the current parser context, at line 1 col 50"
+        "error": null
       }
     }
   },
@@ -347,7 +347,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка -1, позиция -1: Unexpected end-of-input. Expected one of: "
+        "error": null
       }
     }
   },
@@ -363,7 +363,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка 1, позиция 66: No terminal matches 'f' in the current parser context, at line 1 col 66"
+        "error": "неизвестное слово: 'fly'"
       }
     }
   },
@@ -379,7 +379,7 @@
       },
       "cfg": {
         "accepted": false,
-        "error": "строка 1, позиция 5: No terminal matches 'a' in the current parser context, at line 1 col 5"
+        "error": null
       }
     }
   }

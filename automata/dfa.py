@@ -1,5 +1,7 @@
 """ДКА для языка L1 = a^m b^n (m, n >= 0)."""
 
+from time import perf_counter
+
 ALPHABET = {"a", "b"}
 
 # Состояния:
@@ -24,6 +26,7 @@ def analyze(input_str: str) -> dict:
 
     Возвращает dict по контракту из docs/api.md.
     """
+    started = perf_counter()
     trace = [{"step": 0, "state": START_STATE, "symbol": None, "next_state": START_STATE}]
     state = START_STATE
     error = None
@@ -51,5 +54,5 @@ def analyze(input_str: str) -> dict:
         "trace": trace,
         "parse_tree": None,
         "error": error,
-        "elapsed_ms": 0.0,
+        "elapsed_ms": (perf_counter() - started) * 1000,
     }

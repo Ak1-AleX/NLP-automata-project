@@ -7,6 +7,7 @@ max_depth. Предложения глубже лимита регулярным
 """
 
 import re
+from time import perf_counter
 
 # Терминалы — те же, что в docs/language_spec.md и grammar/english.lark
 DET = r"(?:the|a)"
@@ -63,6 +64,12 @@ def analyze(input_str: str, max_depth: int = 2) -> dict:
 
     Возвращает dict по контракту из docs/api.md.
     """
+    if isinstance(max_depth, bool) or not isinstance(max_depth, int):
+        raise TypeError("max_depth должен быть целым числом")
+    if max_depth < 0:
+        raise ValueError("max_depth не может быть отрицательным")
+
+    started = perf_counter()
     pattern = _get_pattern(max_depth)
     tokens = input_str.split()
     match = pattern.match(input_str)
@@ -84,5 +91,5 @@ def analyze(input_str: str, max_depth: int = 2) -> dict:
         "trace": [],
         "parse_tree": None,
         "error": error,
-        "elapsed_ms": 0.0,
+        "elapsed_ms": (perf_counter() - started) * 1000,
     }

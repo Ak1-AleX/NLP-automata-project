@@ -168,6 +168,20 @@ def test_evaluate_bounded_vs_cfg():
     assert summary["cfg"]["accuracy_by_depth"][2] == 1.0
 
 
+def test_cfg_syntax_rejection_counts_but_unknown_word_is_input_error():
+    dataset = [
+        {"input": "the cat ran", "depth": 0, "label": "correct", "negative_type": None},
+        {"input": "the cat the ran", "depth": 0, "label": "incorrect", "negative_type": "extra_det"},
+        {"input": "the cat fly", "depth": 0, "label": "incorrect", "negative_type": "unknown_token"},
+    ]
+    result = evaluate(dataset, [
+        {"name": "cfg", "fn": parse, "options": {"grammar": "english"}},
+    ])
+    row = result["summary"][0]
+    assert row["incorrect_rejected"] == 1
+    assert row["incorrect_total"] == 2
+
+
 # --- evaluate: устойчивость к исключениям ---
 
 def test_evaluate_handles_exception_gracefully():
