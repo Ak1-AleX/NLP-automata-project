@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-10-13T20:31:13+00:00",
-  "python_version": "3.11.2",
+  "generated_at_utc": "2026-10-14T17:17:09+00:00",
+  "python_version": "3.12.1",
   "lark_version": "1.3.1",
   "depths": [
     0,
@@ -21,5 +21,5 @@
     "bounded_d1",
     "cfg"
   ],
-  "metrics_note": "accuracy_by_depth is the fraction of positive (correct) examples accepted; the CSV also reports rejection counts for negative examples."
+  "metrics_note": "accuracy_by_depth is the fraction of positive (correct) examples accepted; the CSV also reports rejection counts for negative examples. Unknown-vocabulary examples are input errors and are not credited as correct rejections by any model."
 }

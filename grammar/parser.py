@@ -1,27 +1,18 @@
 """Обёртка над Lark: проверка принадлежности и дерево разбора."""
 
-from pathlib import Path
 from time import perf_counter
-from functools import lru_cache
-import re
 from lark import Lark, Tree, Token
 from lark.exceptions import UnexpectedInput
-
-GRAMMAR_DIR = Path(__file__).parent
-
-_GRAMMAR_FILES = {
-    "english": GRAMMAR_DIR / "english.lark",
-    "anbn":    GRAMMAR_DIR / "anbn.lark",
-}
+from grammar.vocabulary import GRAMMAR_FILES, unknown_symbol_error
 
 _parsers = {}
 
 
 def _get_parser(grammar: str) -> Lark:
-    if grammar not in _GRAMMAR_FILES:
+    if grammar not in GRAMMAR_FILES:
         raise ValueError(f"неизвестная грамматика: {grammar!r}")
     if grammar not in _parsers:
-        text = _GRAMMAR_FILES[grammar].read_text(encoding="utf-8")
+        text = GRAMMAR_FILES[grammar].read_text(encoding="utf-8")
         _parsers[grammar] = Lark(text, start="start", parser="earley", keep_all_tokens=True)
     return _parsers[grammar]
 
@@ -69,7 +60,7 @@ def analyze(input_str: str, grammar: str = "english") -> dict:
         # A syntax mismatch over known terminals is an ordinary language
         # rejection. Reserve ``error`` for symbols outside the grammar's
         # alphabet so evaluation can distinguish rejection from bad input.
-        error = _unknown_symbol_error(input_str, grammar)
+        error = unknown_symbol_error(input_str, grammar)
     except ValueError as e:
         error = str(e)
 
@@ -83,29 +74,3 @@ def analyze(input_str: str, grammar: str = "english") -> dict:
         "error": error,
         "elapsed_ms": (perf_counter() - started) * 1000,
     }
-
-
-@lru_cache(maxsize=None)
-def _grammar_vocabulary(grammar: str) -> frozenset[str]:
-    """Extract literal terminals so vocabulary checks follow the grammar file."""
-    path = _GRAMMAR_FILES.get(grammar)
-    if path is None:
-        return frozenset()
-    text = path.read_text(encoding="utf-8")
-    return frozenset(re.findall(r'"([^"\\]+)"', text))
-
-
-def _unknown_symbol_error(input_str: str, grammar: str) -> str | None:
-    """Возвращает ошибку для первого символа/слова вне алфавита грамматики."""
-    vocabulary = _grammar_vocabulary(grammar)
-    if vocabulary is None:
-        return None
-    if grammar == "anbn":
-        unknown = next((symbol for symbol in input_str if symbol not in vocabulary), None)
-        if unknown is not None:
-            return f"символ {unknown!r} не входит в алфавит {{a, b}}"
-    else:
-        unknown = next((token for token in input_str.split() if token not in vocabulary), None)
-        if unknown is not None:
-            return f"неизвестное слово: {unknown!r}"
-    return None

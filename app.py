@@ -78,7 +78,7 @@ if page == "Формальные языки":
         _show_decision(dfa_result, "ДКА")
         st.graphviz_chart(automaton_to_dot(dfa_result["trace"], dfa_result["accepted"]))
         with st.expander("Трассировка переходов"):
-            st.dataframe(dfa_result["trace"], use_container_width=True, hide_index=True)
+            st.dataframe(dfa_result["trace"], width="stretch", hide_index=True)
 
     with stack_tab:
         st.subheader("Нерегулярный язык L₂ = { aⁿbⁿ | n ≥ 0 }")
@@ -87,7 +87,7 @@ if page == "Формальные языки":
         stack_result = analyze_stack(stack_input)
         _show_decision(stack_result, "Стековый анализатор")
         if stack_result["trace"]:
-            st.dataframe(stack_result["trace"], use_container_width=True, hide_index=True)
+            st.dataframe(stack_result["trace"], width="stretch", hide_index=True)
         else:
             st.caption("Пустая строка принимается: n = 0.")
         st.info(
@@ -190,7 +190,7 @@ else:
                     "Отклонены некорректные": f"{row['incorrect_rejected']}/{row['incorrect_total']}",
                     "Общая точность": f"{_overall_accuracy(row):.1%}",
                 })
-            st.dataframe(rows, use_container_width=True, hide_index=True)
+            st.dataframe(rows, width="stretch", hide_index=True)
 
             figure, axis = plt.subplots(figsize=(7.5, 4.2))
             for row in summary:

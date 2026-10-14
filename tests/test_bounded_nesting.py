@@ -1,5 +1,7 @@
 """Тесты для automata/bounded_nesting.py (регулярная модель с лимитом глубины)."""
 
+from itertools import product
+
 import pytest
 
 from automata.bounded_nesting import (
@@ -7,7 +9,10 @@ from automata.bounded_nesting import (
     get_pattern,
     count_depth,
     _patterns,
+    MAX_SUPPORTED_DEPTH,
 )
+from grammar.parser import analyze as cfg_analyze
+from grammar.vocabulary import grammar_rule_vocabulary
 
 
 # --- Предложения разной глубины (раздел 3.4 спецификации) ---
@@ -86,6 +91,39 @@ def test_rejects_invalid_regardless_of_depth(sentence, max_depth):
     assert result["accepted"] is False
 
 
+def test_unknown_word_is_reported_as_input_error():
+    result = analyze("the cat fly", max_depth=1)
+    assert result["accepted"] is False
+    assert result["error"] == "неизвестное слово: 'fly'"
+
+
+def test_known_vocabulary_syntax_rejection_is_not_input_error():
+    result = analyze("the cat the ran", max_depth=1)
+    assert result["accepted"] is False
+    assert result["error"] is None
+
+
+def test_bounded_and_cfg_share_all_english_grammar_terminals():
+    terms = {
+        rule: grammar_rule_vocabulary("english", rule)
+        for rule in ("det", "n", "iv", "v")
+    }
+    sentences = [
+        f"{det} {noun} {iv}"
+        for det, noun, iv in product(terms["det"], terms["n"], terms["iv"])
+    ]
+    sentences.extend(
+        f"{det} {noun} that the cat {verb} {iv}"
+        for det, noun, verb, iv in product(
+            terms["det"], terms["n"], terms["v"], terms["iv"]
+        )
+    )
+
+    for sentence in sentences:
+        assert analyze(sentence, max_depth=1)["accepted"] is True
+        assert cfg_analyze(sentence, grammar="english")["accepted"] is True
+
+
 # --- Рост покрытия с ростом max_depth ---
 
 def test_coverage_grows_with_max_depth():
@@ -142,6 +180,16 @@ def test_get_pattern_grows_with_depth():
     p1 = get_pattern(1)
     p2 = get_pattern(2)
     assert len(p0) < len(p1) < len(p2)
+
+
+def test_pattern_size_stays_bounded_at_supported_maximum():
+    pattern = get_pattern(MAX_SUPPORTED_DEPTH)
+    assert len(pattern) < 10_000
+
+
+def test_depth_above_supported_limit_is_rejected():
+    with pytest.raises(ValueError, match="не может быть больше"):
+        analyze("the cat ran", max_depth=MAX_SUPPORTED_DEPTH + 1)
 
 
 # --- Кэш регулярок ---

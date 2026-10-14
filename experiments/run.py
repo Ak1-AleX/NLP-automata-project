@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 
-from automata.bounded_nesting import analyze as bounded_analyze
+from automata.bounded_nesting import analyze as bounded_analyze, validate_max_depth
 from experiments.evaluate import (
     RESULTS_DIR,
     evaluate,
@@ -18,6 +18,8 @@ from experiments.evaluate import (
 )
 from experiments.generate import generate_dataset
 from grammar.parser import analyze as cfg_analyze
+
+MAX_EXPERIMENT_DEPTH = 64
 
 
 def _package_version(name: str) -> str | None:
@@ -36,12 +38,22 @@ def run_experiment(
     results_dir: Path | None = None,
 ) -> dict:
     """Генерирует данные, сравнивает модели и сохраняет полный прогон."""
+    if (
+        isinstance(min_depth, bool) or not isinstance(min_depth, int)
+        or isinstance(max_depth, bool) or not isinstance(max_depth, int)
+    ):
+        raise TypeError("min_depth и max_depth должны быть целыми числами")
     if min_depth < 0 or max_depth < min_depth:
         raise ValueError("требуется 0 <= min_depth <= max_depth")
+    if max_depth > MAX_EXPERIMENT_DEPTH:
+        raise ValueError(
+            f"max_depth не может быть больше {MAX_EXPERIMENT_DEPTH}"
+        )
+    if isinstance(n_per_depth, bool) or not isinstance(n_per_depth, int):
+        raise TypeError("n_per_depth должен быть целым числом")
     if n_per_depth <= 0:
         raise ValueError("n_per_depth должен быть больше нуля")
-    if bounded_depth < 0:
-        raise ValueError("bounded_depth не может быть отрицательной")
+    validate_max_depth(bounded_depth)
 
     output_dir = Path(results_dir) if results_dir is not None else RESULTS_DIR
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -85,7 +97,9 @@ def run_experiment(
         "methods": [row["method"] for row in result["summary"]],
         "metrics_note": (
             "accuracy_by_depth is the fraction of positive (correct) examples accepted; "
-            "the CSV also reports rejection counts for negative examples."
+            "the CSV also reports rejection counts for negative examples. "
+            "Unknown-vocabulary examples are input errors and are not credited as "
+            "correct rejections by any model."
         ),
     }
     (output_dir / "metadata.json").write_text(
@@ -101,7 +115,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--min-depth", type=int, default=0)
     parser.add_argument("--max-depth", type=int, default=4,
-                        help="максимальная глубина примеров в наборе")
+                        help=f"максимальная глубина примеров (0–{MAX_EXPERIMENT_DEPTH})")
     parser.add_argument("--n-per-depth", type=int, default=20,
                         help="количество положительных и отрицательных примеров на глубину")
     parser.add_argument("--seed", type=int, default=42)
