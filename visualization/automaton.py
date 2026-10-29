@@ -10,9 +10,9 @@ from automata.dfa import ACCEPT_STATES, START_STATE, TRANSITIONS
 # Пояснительные подписи для узлов диаграммы. Это интерфейсный текст,
 # а не часть формальной модели, поэтому хранится здесь, а не в dfa.py.
 _STATE_LABELS = {
-    "q0": "q0\\nначальное, принимающее",
-    "q1": "q1\\nпринимающее",
-    "q2": "q2\\nловушка",
+    "q0": "q0\nначальное, принимающее",
+    "q1": "q1\nпринимающее",
+    "q2": "q2\nловушка",
 }
 
 _TRAP_STATES = {"q2"}
@@ -21,10 +21,8 @@ _TRAP_STATES = {"q2"}
 def _all_states() -> set[str]:
     """Все состояния, встречающиеся в таблице переходов и как стартовые/принимающие."""
     states = {START_STATE} | set(ACCEPT_STATES)
-    for source, _ in TRANSITIONS:
-        states.add(source)
-    for _, target in TRANSITIONS:
-        states.add(target)
+    for (source, _symbol), target in TRANSITIONS.items():
+        states.update((source, target))
     return states
 
 
@@ -59,7 +57,9 @@ def automaton_to_dot(trace: list[dict] | None = None, accepted: bool | None = No
     for state in sorted(_all_states()):
         shape = "doublecircle" if state in ACCEPT_STATES else "circle"
         label = _STATE_LABELS.get(state, state)
-        attrs = [f"shape={shape}", f"label={json.dumps(label)}"]
+        # Graphviz DOT accepts UTF-8 labels and interprets \n as a line break.
+        # ASCII-escaping Cyrillic here makes sequences like \u043d appear literally.
+        attrs = [f"shape={shape}", f"label={json.dumps(label, ensure_ascii=False)}"]
         if state in _TRAP_STATES:
             attrs.append('fillcolor="#FFF7ED"')
         lines.append(f'  {state} [{", ".join(attrs)}];')
